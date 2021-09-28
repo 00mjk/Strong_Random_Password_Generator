@@ -1,38 +1,16 @@
+/* ####  DATA SHEET  #### */
 
-
-
-array1.forEach(element => console.log(element));
-
-// expected output: "a"
-// expected output: "b"
-// expected output: "c"
-
-
-const array1 = ['a', 'b', 'c'];
-
-let arr = new array();
-scripts[0] = "PHP",
-scripts[1] = "ASP",
-scripts[2] = "Javascript",
-scripts[3] = "HTML",
-scripts[4] = "Node",
-scripts[5] = "PHP",
-document.write.join(" : ");
-console.log(docuument.write(str));
-
-// Math.random.floor
 let upCase = [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, E, S, T, U, V, Q, X, Y, Z];
-console.log(upCase);
-let lowCase = [abcdefghijklmnopqrstuvwxyz];
-console.log(lowCase);
+
+let lowCase = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z];
+
 let symbols = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "-"," +=", "{[", "}]", "|\", "<", ">", ">", "?", "/"];
-console.log(symols);
-let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-console.log(numbers);
 
+let numbrs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-let phonetics = [
-   1: [ "Alpha", a, 
+// Phonetic alphabet
+let phonetics = [ 
+    "Alpha",
     "Bravo",
     "Charlie",
     "Delta",
@@ -58,21 +36,24 @@ let phonetics = [
     "xray",
     "Yankee",
     "Zulu",
-    ]
-
-    
-Let map = [ "A" :["31":""],
-"B",:["32":" "],   
-"C",:["33":"!"],     
-"D",:["34":"\"], 
-"E",:["35":"#"],       
-"F",:["36":"$"],         
-"G",:["37":"%"],
-"H",:["38":"&"], 
-"I",:["39":"'"],            
-"K",:["40":"("], 
 ]
 
+
+// mapping UppCase letters to ASCII 
+Let symbolMap = [ 
+      "A":["31":" "],
+      "B":["32":"*"],   
+      "C":["33":"!"],     
+      "D":["34":"-"], 
+      "E":["35":"#"],       
+      "F":["36":"$"],         
+      "G":["37":"%"],
+      "H":["38":"&"], 
+      "I":["39":"'"],            
+      "K":["40":"("], 
+]
+
+// ASCII codes for assorted charecters, numbers, and letters
 let ASC = {
    "31": "",      "32": " ",     "33": "!",     "34": "\"",    "35": "#",    
    "36": "$",     "37": "%",     "38": "&",     "39": "'",     "40": "(",    
@@ -94,80 +75,17 @@ let ASC = {
    "116": "t",    "117": "u",    "118": "v",    "119": "w",    "120": "x",    
    "121": "y",    "122": "z",    "123": "{",    "124": "|",    "125": "}",    
    "126": "~",    "127": ""
-   }
-   console.log(ASC.length);
-
-
-for (let i = 0; i < screen.length; i++) {
-   let code = s.charCodeAt(i);
-   ASC.push(code)
 }
-console.log(ASC)
 
-let myarr = ["hello", 1, 2, 3, 4, 5, true, "vincent"]
+/* SCRATCH WORK  */
+const array1 = ['a', 'b', 'c'];
 
-console.log(myarr);
-
-console.log(this);
-
-// window.alert("are you sure?");
-
-
-// let twodime = 
-// [
-//     ["vince", 1],
-//     ["eat", 2],
-//     ["eat", 2],
-//     ["one", 2],
-//     ["true", 6],
-//     ["eat", 192],
-//     ["eat", 9]
-// ];
-
-// console.log(twodime);
-
-//    Let cp = [ "A" :["31":"" ],
-//              "B",:["32":" "],   
-//              "C",:["33":"!"],     
-//              "D",:["34":"\"], 
-//              "E",:["35":"#"],       
-//              "F",:["36":"$"],         
-//              "G",:["37":"%"],
-//              "H",:["38":"&"], 
-//              "I",:["39":"'"],            
-//              "K",:["40":"("], ]
-
-//             for (let i = 0; i < 0; i++) {
-//                 console.log(c);\n
-//                 charCodeAt.(i);
-//                 return
-//             }
-    
-
-
-// function findType(findType(cp)) {
-//     if _(typeof === type) {
-//         console.log( type + "[" + value + "] (' + id + ') is not a " + type );
-//     }
-// }
-
-// console.log(phonetics)
-
-// const data = require ('./index);
-
-// const (data) = require('./index';);
-// console.log(data.price)
-
-
-
-// private async render(): Promise<void> {
-//     // Disabled until https://crbug.com/1079231 is fixed.
-//     await coordinator.write(() => {
-//       // clang-format off
-     
-//       LitHtml.render(LitHtml.html``, this.#shadow, { host: this});
-
-// let nums = 1234;
-// let list = (1, 2, 3, 4, 5);
-// export {nums};
-// export {list};
+let arr = new array();
+scripts[0] = "PHP",
+scripts[1] = "ASP",
+scripts[2] = "Javascript",
+scripts[3] = "HTML",
+scripts[4] = "Node",
+scripts[5] = "PHP",
+document.write.join(" : ");
+console.log(docuument.write(str));
