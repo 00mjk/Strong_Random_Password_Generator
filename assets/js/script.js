@@ -30,10 +30,8 @@
          +  what else does the browser do automatically?
          +  How can I make the browser "dumber". 
          +  different between DOM, prototype, and ..
-
          
 */
-
 
 /* Declare Variables */
 let userInput;
@@ -44,10 +42,7 @@ const userOutput;
 /* Config to accept user input  */
 var generateBtn = document.querySelector("#generate");
 
-
-
 // var userPrompt = prompt("hello, please enter your name", " ");
-
 Document.addEventListener(onclick, (e) => {
   e.preventDefault;
   userInput = lengthDOM.value;
@@ -59,12 +54,12 @@ const log = document.querySelector('.event-log-contents');
 const reload = document.querySelector('#reload');
 
 
-reload.addEventListener('click', () => {
-  log.textContent ='';
-  window.setTimeout(() => {
-      window.location.reload(true);
-  }, 200);
-});
+// reload.addEventListener('click', () => {
+//   log.textContent ='';
+//   window.setTimeout(() => {
+//       window.location.reload(true);
+//   }, 200);
+// });
 
 let babel = window.addEventListener('load', (event) => {
     log.textContent = log.textContent + 'load\n';
@@ -80,7 +75,7 @@ let babel = window.addEventListener('load', (event) => {
 // for (let i = 0; i < screen.length; i++) {
 //    let code = s.charCodeAt(i);
 //    ASC.push(code)
-}
+// }
 
 
 /* If Input passes type check, then output pw to user */

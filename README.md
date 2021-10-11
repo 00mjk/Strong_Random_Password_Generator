@@ -4,7 +4,7 @@
 ## Summary
 
 ```
-
+I present to you a way to generate random passwords. Follow the prompts to customize your password to your specific needs.
 ```
 
 ## Solution
@@ -12,12 +12,11 @@
 ```
 - Moved index & mark down files up to root folder. (/{ root })
 - Styling files are kept in a subdirectory named "css".
-- Added title bar and entered a value
-- 
+- Added title bar and entered a value.
 
 ```
 
-## Stretch Goals
+## Steps
 ```
 I need a new, secure password
 TODO:
@@ -36,11 +35,11 @@ TODO:
 - [] the password is either displayed in an alert or written to the page
 ```
 
-
-## References & Thanks
+## References
 + [MDN WebDocs](https://developer.mozilla.org/en-US/)
 + [W3 Schools](https://www.w3schools.com/)
-+ 
++ [Collection of gitignore Templates](https://github.com/github/gitignore)
++ [Banner Credit](https://www.eff.org/files/banner_library/encryption-og-2_0.png)
 
 <img >
 
