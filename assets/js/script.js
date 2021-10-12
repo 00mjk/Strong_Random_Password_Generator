@@ -136,17 +136,3 @@ generate.addEventListener(onclick, (e) => {
     userInput = lengthDOM.value;
     return userInput;
 });
-
-/* Generate a random password */
-// Math.random.floor
-// array1.forEach(element => console.log(element));
-// console.log(ASC.length);
-
-// for (let i = 0; i < screen.length; i++) {
-//    let code = s.charCodeAt(i);
-//    ASC.push(code)
-// }
-
-/* If Input passes type check, then output pw to user */
-
-/* add users name to array & reset  */
