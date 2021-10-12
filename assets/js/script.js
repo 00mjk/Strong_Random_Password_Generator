@@ -116,16 +116,30 @@ let symbols = [
 
 let num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-var person = prompt("Please enter your name", "");
+console.log(Math.random());
 
-if (person != null) {
-    document.getElementById("userName").innerHTML;
-    userData.push(person);
-    console.log(userData);
-    "Hello " + person + "! How are you today?";
-} else {
-    prompt("Please enter a valid name");
-}
+
+document.getElementById("generate").addEventListener("click", function(){
+    let lowerC = prompt("Should your password contain lower case characters?", "enter yes or no");
+    let upperC = prompt("Should your password contain upper case characters?", "enter yes or no");
+
+});
+
+// var lowerC = prompt("Should your password contain lower case characters?", "enter yes or no");
+
+// if (lowerC != null) {
+//     document.getElementById("userName").innerHTML;
+//     userData.push(person);
+//     console.log(userData);
+//     "Hello " + person + "! How are you today?";
+// } else {
+//     prompt("Please enter a valid name");
+// }
+
+// var lowerC = prompt(
+//     "Should your password contain upper case characters?",
+//     "enter yes or no"
+// );
 
 /* Config to accept user input  */
 var generateBtn = document.querySelector("#generate");
