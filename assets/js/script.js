@@ -35,51 +35,115 @@
 
 /* Declare Variables */
 let userInput;
-let userData = {};
+let userData = [];
 let password;
-const userOutput;
+/* Data Sheet */
+let upCase = [
+    A,
+    B,
+    C,
+    D,
+    E,
+    F,
+    G,
+    H,
+    I,
+    J,
+    K,
+    L,
+    M,
+    N,
+    O,
+    P,
+    Q,
+    E,
+    S,
+    T,
+    U,
+    V,
+    Q,
+    X,
+    Y,
+    Z,
+];
+let lowCase = [
+    a,
+    b,
+    c,
+    d,
+    e,
+    f,
+    g,
+    h,
+    i,
+    j,
+    k,
+    l,
+    m,
+    n,
+    o,
+    p,
+    q,
+    r,
+    s,
+    t,
+    u,
+    v,
+    w,
+    x,
+    y,
+    z,
+];
+let symbols = [
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^",
+    "&",
+    "*",
+    "(",
+    ")",
+    "_",
+    "-",
+    "<",
+    ">",
+    ">",
+    "?",
+    "/",
+];
+let num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+var person = prompt("Please enter your name", "");
+
+if (person != null) {
+    document.getElementById("userName").innerHTML;
+    userData.push(person);
+    console.log(userData);
+    "Hello " + person + "! How are you today?";
+}
 
 /* Config to accept user input  */
 var generateBtn = document.querySelector("#generate");
 
 // var userPrompt = prompt("hello, please enter your name", " ");
-Document.addEventListener(onclick, (e) => {
-  e.preventDefault;
-  userInput = lengthDOM.value;
-  return userInput;
-})
-
-
-const log = document.querySelector('.event-log-contents');
-const reload = document.querySelector('#reload');
-
-
-// reload.addEventListener('click', () => {
-//   log.textContent ='';
-//   window.setTimeout(() => {
-//       window.location.reload(true);
-//   }, 200);
-// });
-
-let babel = window.addEventListener('load', (event) => {
-    log.textContent = log.textContent + 'load\n';
+generate.addEventListener(onclick, (e) => {
+    e.preventDefault;
+    userInput = lengthDOM.value;
+    return userInput;
 });
-
 
 /* Generate a random password */
 // Math.random.floor
 // array1.forEach(element => console.log(element));
 // console.log(ASC.length);
 
-
 // for (let i = 0; i < screen.length; i++) {
 //    let code = s.charCodeAt(i);
 //    ASC.push(code)
 // }
 
-
 /* If Input passes type check, then output pw to user */
-
-
 
 /* add users name to array & reset  */
