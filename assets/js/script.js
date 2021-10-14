@@ -36,7 +36,7 @@
 /* Declare Variables */
 let userInput;
 let userData = [];
-let password;
+let password = [];
 /* Data Sheet */
 let upCase = [
     "A",
@@ -114,15 +114,55 @@ let symbols = [
     "/",
 ];
 
-let num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let randNum = Math.floor(Math.random()*10);
+// console.log(randNum);
+// password.push(randNum);
+console.log(upCase);
 
-console.log(Math.random());
+for (i=0; i<9; i++) {
+  let randNum = Math.floor(Math.random()*10);
+  console.log(randNum)
+  password.push(randNum);
+console.log(password);
+}
 
+function addUpCase() {
+  let upperCase = upCase[Math.floor(Math.random()*26)];
+  password.push(upperCase)
+}
+for (i=9; i<13; i++){
+    addUpCase();
+}
+
+function addLowCase(){
+  let lowerCase = lowCase[Math.floor(Math.random()*26)];
+  console.log(lowerCase);
+  password.push(lowerCase);
+}
+for (i=13; i<18; i++){
+  addLowCase()
+}
+
+function addSymbols(){
+  let sym = symbols[Math.floor(Math.random()*17)];
+  console.log(sym)
+  password.push(sym)
+}
+for (i=18; i<24; i++){
+  addSymbols()
+}
+
+console.log(password);
+console.log(password.length);
+console.log(password);
+console.log(symbols.length);
 
 document.getElementById("generate").addEventListener("click", function(){
     let lowerC = prompt("Should your password contain lower case characters?", "enter yes or no");
-    let upperC = prompt("Should your password contain upper case characters?", "enter yes or no");
-
+    while (lowerC == null) {
+      let lowerC = prompt("Please enter yes or no");
+    }
 });
 
 // var lowerC = prompt("Should your password contain lower case characters?", "enter yes or no");
