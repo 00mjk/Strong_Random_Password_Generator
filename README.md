@@ -7,6 +7,23 @@
 I present to you a way to generate random passwords. Follow the prompts to customize your password to your specific needs.
 ```
 
+## File Structure
+```
+.Password.gen
+|-- LICENSE
+|-- README.md
+|-- assets
+|   |-- css
+|   |   |-- reset.css
+|   |   `-- style.css
+|   |-- data
+|   |   `-- data.js
+|   |-- images
+|   `-- js
+|       `-- script.js
+`-- index.html
+```
+
 ## Solution
 
 ```
@@ -16,24 +33,13 @@ I present to you a way to generate random passwords. Follow the prompts to custo
 
 ```
 
-## Steps
+## Summary
 ```
-I need a new, secure password
-TODO:
-- [] click the button to generate a password
-- [] Create prompts for password criteria
-- [] select which criteria to include in the password
-- [] prompted for the length of the password
-- [] I choose a length of at least 8 characters and no more than 128 characters
-- [] asked for character types to include in the password
-- [] I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-- [] I answer each prompt
-- [] my input should be validated and at least one character type should be selected
-- [] all prompts are answered
-- [] a password is generated that matches the selected criteria
-- [] the password is generated
-- [] the password is either displayed in an alert or written to the page
+User will be presented with the Password Generator page. The user will be prompted to answer 3 questions about the password when the Generate Password button is clicked. After the 3rd prompt is answered, a password will appear that may be copied.
 ```
+
+## Image
+![Image of App](https://images2.imgbox.com/46/2c/vaziHEH5_o.png)
 
 ## References
 + [MDN WebDocs](https://developer.mozilla.org/en-US/)
