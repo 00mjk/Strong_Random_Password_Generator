@@ -1,28 +1,17 @@
+# RANDOM PASSWORD GENERATOR
 
-<a href="https://imgur.com/sSIrclV"><img src="https://i.imgur.com/sSIrclV.png" title="source: imgur.com" /></a>
----
 ## Summary
 
 ```
-I present to you a way to generate random passwords. Follow the prompts to customize your password to your specific needs.
+I present to you a way to generate random passwords. Follow the prompts to customize your password to your specific needs. 
+
+Prompts:
+Will allow user to customize the desired password by asking the following: Should the password contain symbols, lowercase letters, uppercase letters?
+
+Password will display after the last prompt is answered. Browser reset will will after 5 seconds.
 ```
 
-## File Structure
-```
-.Password.gen
-|-- LICENSE
-|-- README.md
-|-- assets
-|   |-- css
-|   |   |-- reset.css
-|   |   `-- style.css
-|   |-- data
-|   |   `-- data.js
-|   |-- images
-|   `-- js
-|       `-- script.js
-`-- index.html
-```
+TABLE OF CONTENTS
 
 ## Solution
 
@@ -31,11 +20,6 @@ I present to you a way to generate random passwords. Follow the prompts to custo
 - Styling files are kept in a subdirectory named "css".
 - Added title bar and entered a value.
 
-```
-
-## Summary
-```
-User will be presented with the Password Generator page. The user will be prompted to answer 3 questions about the password when the Generate Password button is clicked. After the 3rd prompt is answered, a password will appear that may be copied.
 ```
 
 ## Image
