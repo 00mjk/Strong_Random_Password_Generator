@@ -22,10 +22,71 @@ body,
 }
 
 body {
-  font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #242C39;
+  color: #FFFFFF;
 }
 
+:root {
+  --wp-admin-theme-color: #FFFFFF;
+  --wp-admin-theme-color-darker-10: #006ba1;
+  --wp-admin-theme-color-darker-20: #005a87;
+}
+
+:root {
+  --darkreader-neutral-background: #ffd428;
+  --darkreader-neutral-text: #d8d4cf;
+  --darkreader-selection-background: #ffd428;
+  --darkreader-selection-text: #e8e6e3;
+}
+
+
+
+@media only screen and (min-width: 48em)
+html {
+    font-size: 100%;
+}
+
+html, input, textarea, button {
+    font-family: adelle-sans,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+html {
+    font-family: sans-serif;
+    font-weight: regular;
+    font-size: 87.5%;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+::-webkit-scrollbar {
+    background-color: #ffd428;
+    color: #aba499;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+
+::selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+
+/* end of responsive */
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
@@ -36,15 +97,18 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: #FFFFFF;
+  font-size: 5vw;
+  font-family: monospace;
+  padding-bottom: 15vw;
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: #4D596F;
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  color: #FFFFFF;
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
@@ -83,11 +147,11 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: #F86B61;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
-  color: hsl(0, 0%, 100%);
+  color: #242C39;
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
@@ -146,4 +210,8 @@ button[disabled] {
 }
 figure {
   margin: 0;
+}
+
+.password {
+  color: #FFFFFF;
 }
