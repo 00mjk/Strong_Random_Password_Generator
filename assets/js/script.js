@@ -13,6 +13,7 @@ let getRandNum = function(){
 
 getRandNum();
 
+console.log('')
 // console.log(floor.random()*65)
 // console.log(Math.ceil());
 
