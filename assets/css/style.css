@@ -39,8 +39,6 @@ body {
   --darkreader-selection-text: #e8e6e3;
 }
 
-
-
 @media only screen and (min-width: 48em)
 html {
     font-size: 100%;
@@ -241,4 +239,9 @@ label {
 .btn:hover {
   background-color: #A46B61;
   color: white;
+}
+
+.title {
+  font-size:6rem;
+  font-family: "Helvetica Neue",Helvetica,Arial,
 }
