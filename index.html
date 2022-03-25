@@ -3,14 +3,13 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>GenPs By: Vince</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>getPasswords</title>
+  <meta name="viewport" window.top="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="imaage/x-icon" href="/assets/img/favicon/favicon.ico">
+  <meta http-equiv="X-UA-Compatible" window.top="ie=edge" />
   <link rel="stylesheet" href="./assets/css/style.css" />
-  <script src="./assets/js/script.js"></script>
 </head>
-
-<body>
+  <body>
   <div class="wrapper">
     <header>
       <h1 class="title">Password Generator</h1>
@@ -23,29 +22,13 @@
         <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password" id="passwordtext"></textarea>
       </div>
       <div class="card-footer">
-
       <form class="form">
-      
-      <div>
-        <label for="length">length &nbsp;	</label>
-        <input type="range" min="1" max="50" value="10" id="passwordrange">
-        <input type="number" min="1" max="50" value="6" id="passwordlength">
-      </div>
-      
-        <label for="addUppercase">Uppercase Letters &nbsp;	
-        <input type="checkbox" id="upperCase"></label>
-
-        <label for="addLowercase">Lowercase Letters &nbsp;	
-        <input type="checkbox" id="lowerCase"></label>
-
-        <label for="addSymbols">Symbols &nbsp;	
-        <input type="checkbox" id="symbols"></label>
-
-        <button id="generate" class="btn">Generate Password</button>
-      </form>
-
+        <button id="initButton" class="btn">Generate Password</button>
+      </form>   
     </div>
+    
   </div>
-</body>
 
+  <script src="./assets/js/script.js"></script>
+  </body>
 </html>

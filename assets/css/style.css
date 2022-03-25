@@ -1,8 +1,19 @@
+/* White, Light, Dark, Black, BLUE */
+
+:root {
+  --main-a: #e2e2e2;
+  --main-b: #A9A9A9;
+  --main-c: #37474F;
+  --main-d: #222222;
+  --main-e: #026EBE;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 html,
 body,
 .wrapper {
@@ -11,37 +22,15 @@ body,
   padding: 0;
 }
 
-* {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
-}
-
 body {
-  background-color: #242C39;
-  color: #FFFFFF;
+  font-family: sans-serif;
+  background-color: var(--main-a);
 }
 
-:root {
-  --wp-admin-theme-color: #FFFFFF;
-  --wp-admin-theme-color-darker-10: #006ba1;
-  --wp-admin-theme-color-darker-20: #005a87;
-}
-
-:root {
-  --darkreader-neutral-background: #ffd428;
-  --darkreader-neutral-text: #d8d4cf;
-  --darkreader-selection-background: #ffd428;
-  --darkreader-selection-text: #e8e6e3;
-}
-
-@media only screen and (min-width: 48em)
-html {
+@media only screen and (min-width: 48em) {
+  html {
     font-size: 100%;
+  }
 }
 
 html, input, textarea, button {
@@ -53,18 +42,11 @@ html, input, textarea, button {
 
 html {
     font-family: sans-serif;
-    font-weight: regular;
     font-size: 87.5%;
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
-}
-
-html {
-    font-family: sans-serif;
     -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
 }
-
 
 ::-webkit-scrollbar {
     background-color: #ffd428;
@@ -79,11 +61,6 @@ html {
     background-color: #454a4d;
 }
 
-::selection {
-    background-color: #004daa !important;
-    color: #e8e6e3 !important;
-}
-
 /* end of responsive */
 .wrapper {
   padding-top: 30px;
@@ -95,18 +72,18 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: #FFFFFF;
+  color: var(--main-c);
   font-size: 5vw;
   font-family: monospace;
   padding-bottom: 5vw;
 }
 
 .card {
-  background-color: #4D596F;
+  background-color: var(--main-b);
   border-radius: 5px;
   border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: #FFFFFF;
+  box-shadow: hsl(0,0%,6.7%) 7px 7px 10px 0px;
+  color: var(--main-c);
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
@@ -147,8 +124,7 @@ header {
   border: none;
   background-color: #F86B61;
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   color: #242C39;
   display: inline-block;
   font-size: 22px;
@@ -162,6 +138,10 @@ header {
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
+}
+
+button:hover {
+  background-color: #996699;
 }
 
 .float-right {
@@ -217,7 +197,6 @@ figure {
 .form {
   margin-top: 2rem;
   display: grid;
-  grid-template-colums: auto auto;
   row-gap: 1rem;
   column-gap: 4rem; 
   /* display: grid; */
@@ -243,5 +222,4 @@ label {
 
 .title {
   font-size:6rem;
-  font-family: "Helvetica Neue",Helvetica,Arial,
 }
