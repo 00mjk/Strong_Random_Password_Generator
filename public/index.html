@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>getPasswords</title>
+  <link type="icon" href="./images/favicon.ico">
+  <link href="./stylea.css" rel="stylesheet">
+  <link href="../assets/imgages/Logo/favison.ico" rel="ico">
+</head>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Password Generator</h1>
+    </header>
+    <div class="card">
+      <div class="card-header">
+        <h2>Generate a Password</h2>
+      </div>
+      <div class="card-body">
+        <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password">
+      </textarea>
+      </div>
+      <div class="card-footer">
+        <button id="initButton" class="btn">
+          Generate Password
+          <span role="tooltip" id="button-actions" aria-label="Red button, white text - when pressued, app produces a rabdom password"
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div role="tooltip" id="al" aria-label="Name"></div>
+  <div role="tooltip" id="alb" aria-labelledby="labeldiv"></div>
+  <div role="tooltip" id="combo" aria-label="Aria Name">Name</div>
+  <div role="tooltip" id="title" title="Title"></div> -->
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

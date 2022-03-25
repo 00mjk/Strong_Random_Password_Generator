@@ -1,11 +1,29 @@
 /* White, Light, Dark, Black, BLUE */
 
+
+/* --font-fallback: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-sans;
+--font-body: Inter,var(--font-fallback);
+--font-code: Consolas,"Courier New",monospace;
+--type-body-l: 400 1rem/1.1876 var(--font-body);
+--type-emphasis-m: 600 0.8125rem/1.23 var(--font-body);
+--font-heading: var(--font-body);
+--type-label-s: 600 0.625rem/1.2 var(--font-heading);
+--type-code-regular: 400 0.875rem/1.5 var(--font-code); */
+
 :root {
   --main-a: #e2e2e2;
   --main-b: #A9A9A9;
   --main-c: #37474F;
   --main-d: #222222;
   --main-e: #026EBE;
+  --shadow-01: 0px 1px 2px rgba(251, 251, 254, 0.2);
+  --shadow-02: 0px 1px 6px rgba(251, 251, 254, 0.2);
+  --focus-01: 0px 0px 0px 3px rgba(251, 251, 254, 0.5);
+  --accent-tertiary: rgba(24, 112, 240, 0.1);
+  --button-secondary-border-focus: #1870f0;
+--button-secondary-border-red: #f16b8c;
+--button-secondary-border-red-focus: #faced9;
+--background-mark-green: rgba(107, 184, 106, 0.4);
 }
 
 *,
@@ -186,6 +204,7 @@ button:hover {
     font-size: 0.8rem;
   }
 }
+
 figure {
   margin: 0;
 }
@@ -222,4 +241,46 @@ label {
 
 .title {
   font-size:6rem;
+}
+
+.copy {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: var(--main-a) 50% 50% no-repeat;
+  border-radius: var(--main-b);
+  padding: 6px 12px;
+  border: 1px solid var(--main-c);
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  cursor: pointer;
+  display: none;
+}
+
+copy::after {
+  -webkit-mask-image: url("../media/clippy.svg");
+  -webkit-mask-size: contain;
+  -webkit-mask-position: center;
+  mask-image: url("../media/clippy.svg");
+  mask-size: contain;
+  mask-position: center;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 6px;
+  left: 6px;
+  background-color: var(--icon-primary);
+  content: "";
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  padding: 0;
+  border: 0;
 }
